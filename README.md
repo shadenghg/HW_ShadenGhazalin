@@ -5,8 +5,8 @@
 #### **not_final branch:** 
 ###### All assignments not yet 100 or not checked.
 
+**GRADES:**
 <ul>
-## GRADES:
   <li>HW1: Should correct q.3 </li>
   <li>HW2: 100 </li>
   <li>HW3: Didn't tested yet </li>
