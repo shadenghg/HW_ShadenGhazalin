@@ -80,7 +80,7 @@ def count_File_Lines(file_Path):
 def main():
     file_Path = "C:/Samana/HW_ShadenGhazalin/Project1"
     encryption_files(file_Path)
-    with open(file_Path + "/Original.txt", "a") as file:
+    with open(file_Path + "/result.txt", "a") as file:
         file.write("\n")
         file.write((find_Longest_Word(file_Path).upper() + ' ') * count_File_Lines(file_Path) + " \n")
         for i in range(7):
