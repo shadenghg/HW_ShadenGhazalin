@@ -15,6 +15,6 @@
     <li>HW2: 100% </li>
     <li>HW3: 100% </li>
     <li>HW4: Not checked yet</li>
-    <li>HW3: Not checked yet </li>
+    <li>HW5: Not checked yet </li>
     <li>Project 1: 100% </li>
 </ul> 
