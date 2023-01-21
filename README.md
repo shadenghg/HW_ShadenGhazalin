@@ -12,5 +12,5 @@
     <li>HW1: Corrected q.3 </li>
     <li>HW2: 100% </li>
     <li>HW3: 100% </li>
-    <li>Project 1: Not checked yet :)</li>
+    <li>Project 1: 100% </li>
 </ul> 
