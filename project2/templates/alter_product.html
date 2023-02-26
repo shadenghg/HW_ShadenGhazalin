@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alter product</title>
+</head>
+<!-- Link to CSS  -->
+<link href="{{url_for('static', filename= 'style.css') }}", rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="/" class="logo">
+            <img src="../static/images/logo.png" alt="" width="200px" height="300px">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about_us">About us</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/customers">Customers</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="header-icon">
+            <a href="/cartlist_view"><i class="bx bx-cart-alt"></i></a>
+        </div>
+    </header>
+
+    <br><br><br>
+
+    <!-- Adding products -->
+    <section class="Add-product">
+        <center>
+             <div class="products-container">
+                <h1>UPDATE PRODUCT</h1>
+                <form method="post" enctype="multipart/form-data">
+                    <dl>
+                        <label>Please upload the product photo: </label>
+                        <input type="file" name="filename" >
+                    </dl>
+                    <dl>
+                        <label>Product name</label>
+                        <input type="text" name="product_name"></br>
+                    </dl>
+                    <dl>
+                        <label>Product Price</label>
+                        <input type="text" name="product_price"></br>
+                    </dl>
+                    <dl>
+                        <label>Product quantity</label>
+                        <input type="text" name="product_quantity"></br>
+                    </dl>
+                    <dl>
+                        <label>Description</label>
+                        <textarea type="text" name="product_description"></textarea></br>
+                    </dl>
+                    <a href="{{url_for('products_data')}}"> <button type="submit" class="btn">UPDATE THE PRODUCT</button></a>
+                </form>
+            </div>
+        </center>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Coffee Shop</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100011163738457"><i class='bx bxl-facebook' ></i></a>
+                <a href="/"><i class='bx bxl-twitter' ></i></a>
+                <a href="/"><i class='bx bxl-instagram' ></i></a>
+                <a href="/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="/">Product</a></li>
+            <li><a href="/">Help & Support</a></li>
+            <li><a href="/">Return policy</a></li>
+            <li><a href="/">Terms Of use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>view Guids</h3>
+            <li><a href="/">Features</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Blog Posts</a></li>
+            <li><a href="/">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>Moria 105, Haifa Israel</span>
+                <span><i class='bx bxs-phone'></i>+972-50-5292383</span>
+                <span><i class='bx bxs-envelope'></i>coffee@shop.co.il</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <p>&#169; Shaden All Right Reserved</p>
+    </section>
+</body>
+</html>
