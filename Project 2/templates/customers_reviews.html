@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer reviews</title>
+    <link rel="icon" type="image/png" href="./static/images/icon.png"/>
+</head>
+<!-- Link to CSS  -->
+<link href="{{url_for('static', filename= 'style.css')}}", rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="/home" class="logo">
+            <img src="./static/images/logo.png" alt="" width="200px" height="300px">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="/home">HOME</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about_us">Favorite</a></li>
+            <li><a href="/customers">Orders</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="header-icon">
+            <a href="/cartlist_view"><i class="bx bx-cart-alt"></i></a>
+            <a href="/logout"><i class='bx bx-log-out-circle'></i></a>
+        </div>
+    </header>
+
+    <br><br><br>
+
+
+    <!-- Customers -->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customer's</h2>
+        </div>
+        <div class="customer-container">
+            {%for review in reviews%}
+                <div class="box">
+                    <div class="stars">
+                        {% for rate in range(1, review.review_rate + 1)%}
+                            <i class='bx bxs-star'></i>
+                        {%endfor%}
+                    </div>
+                    <p>{{review.review_text}}</p>
+                    <h2>{{review.reviewer_name}}</h2>
+                </div>
+            {%endfor%}
+        </div>
+    </section>
+
+
+     <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Coffee Shop</h2>
+            <div class="social">
+                <a href="/"><i class='bx bxl-facebook' ></i></a>
+                <a href="/"><i class='bx bxl-twitter' ></i></a>
+                <a href="/"><i class='bx bxl-instagram' ></i></a>
+                <a href="/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="/">Product</a></li>
+            <li><a href="/">Help & Support</a></li>
+            <li><a href="/">Return policy</a></li>
+            <li><a href="/">Terms Of use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>view Guids</h3>
+            <li><a href="/">Features</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Blog Posts</a></li>
+            <li><a href="/">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>Moria 105, Haifa Israel</span>
+                <span><i class='bx bxs-phone'></i>+972-50-5292383</span>
+                <span><i class='bx bxs-envelope'></i>coffee@shop.co.il</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <p>&#169; Shaden All Right Reserved</p>
+    </section>
+</body>
+</html>

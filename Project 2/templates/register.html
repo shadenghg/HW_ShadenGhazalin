@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="icon" type="image/png" href="./static/images/icon.png"/>
+</head>
+<!-- Link to CSS  -->
+<link href="{{url_for('static', filename= 'style.css') }}", rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<body>
+    <!-- Sign Up -->
+    <section class="login">
+        <div class="login_box">
+            <div class="btn-box">
+                <div id="signin-btn"></div>
+            </div>
+            <!-- Registration information -->
+            <form id="login" class="input-group" method="post" action="">
+                <h1>Sign Up</h1><br>
+                <center>
+                    <table>
+                        <tr>
+                            <td><label for="email"> Email Address</label></td>
+                            <td><input type="email" class="from-control" id="email" name="email" placeholder="Enter email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="firstName">First Name:</label></td>
+                            <td><input type="text" class="from-control" id="firstName" name="firstName" placeholder="Enter first name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Last Name:</label></td>
+                            <td><input type="text" class="from-control" id="lastName" name="lastName" placeholder="Enter last name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password1">Password</label></td>
+                            <td><input type="password" class="from-control" id="password1" name="password1" placeholder="Enter password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password2"> Confirm Password</label></td>
+                            <td><input type="password" class="from-control" id="password2" name="password2" placeholder="Confirm password"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </center>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br><br><br><br>
+            <center><a href="{{url_for('login')}}" class="btn">Already have an account? Sign in</a></center>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Coffee Shop</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100011163738457"><i class='bx bxl-facebook' ></i></a>
+                <a href="/"><i class='bx bxl-twitter' ></i></a>
+                <a href="/"><i class='bx bxl-instagram' ></i></a>
+                <a href="/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="/">Product</a></li>
+            <li><a href="/">Help & Support</a></li>
+            <li><a href="/">Return policy</a></li>
+            <li><a href="/">Terms Of use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>view Guids</h3>
+            <li><a href="/">Features</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Blog Posts</a></li>
+            <li><a href="/">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>Moria 105, Haifa Israel</span>
+                <span><i class='bx bxs-phone'></i>+972-50-5292383</span>
+                <span><i class='bx bxs-envelope'></i>coffee@shop.co.il</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <p>&#169; Shaden All Right Reserved</p>
+    </section>
+</body>
+</html>
