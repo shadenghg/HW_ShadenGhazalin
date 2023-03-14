@@ -99,7 +99,7 @@ def count_File_Lines(file_Path):
 # Main function!
 # In the main function we define the path of the file we want to open
 def main():
-    file_Path = "C:/Samana/HW_ShadenGhazalin/Project1"
+    file_Path = "/Project 1"
     encryption_files(file_Path)
     # open the result file to write the longest word multiples of lines in the file.
     with open(file_Path + "/result.txt", "a") as file:
