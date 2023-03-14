@@ -463,7 +463,6 @@ header{
 .Add-product{
     width: 100%;
     min-height: 100vh;
-    background: url("../../static/images/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -499,6 +498,7 @@ header{
     color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    align: center
 }
 .products-container label{
     font-size: 1.6rem;
